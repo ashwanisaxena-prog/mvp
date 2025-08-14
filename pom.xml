@@ -31,6 +31,12 @@
 	</properties>
 	<dependencies>
 		<dependency>
+		   <groupId>com.library</groupId>
+		   <artifactId>ai11lib</artifactId>
+		   <version>0</version>
+		</dependency>
+		
+		<dependency>
 		    <groupId>org.apache.camel.springboot</groupId>
 		    <artifactId>camel-core-starter</artifactId>
 		    <version>4.13.0</version>
