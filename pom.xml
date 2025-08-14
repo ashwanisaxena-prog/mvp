@@ -58,25 +58,18 @@
 					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
+			  <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.mvp.ai11.HelloWorld</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
 			
-			 <plugin>
-		        <groupId>org.apache.maven.plugins</groupId>
-		        <artifactId>maven-dependency-plugin</artifactId>
-		        <executions>
-		          <execution>
-		            <id>copy-dependencies</id>
-		            <phase>prepare-package</phase> <!-- Or another suitable phase -->
-		            <goals>
-		              <goal>copy-dependencies</goal>
-		            </goals>
-		            <configuration>
-		              <outputDirectory>${project.build.directory}/lib</outputDirectory>
-		              <!-- Optional: exclude transitive dependencies -->
-		              <!-- <excludeTransitive>true</excludeTransitive> -->
-		            </configuration>
-		          </execution>
-		        </executions>
-      </plugin>
 		</plugins>
 	</build>
 
