@@ -64,7 +64,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.mvp.ai11.HelloWorld</mainClass>
+                            <mainClass>src/main/java/com/mvp/ai11.HelloWorld.java</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
