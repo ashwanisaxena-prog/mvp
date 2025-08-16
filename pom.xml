@@ -81,6 +81,17 @@
                     </archive>
                 </configuration>
             </plugin>
+             <plugin>
+		      <groupId>org.apache.camel.maven</groupId>
+		      <artifactId>camel-maven-plugin</artifactId>
+		      <executions>
+		        <execution>
+		          <goals>
+		            <goal>prepare-fatjar</goal>
+		          </goals>
+		        </execution>
+		      </executions>
+		    </plugin>
 			
 		</plugins>
 	</build>
